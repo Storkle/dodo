@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>FX1</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content=""/>
+<meta name="author" content="Seth Burleigh"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">FX1</h1>
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> frame based narrative language </h2>
+<div class="outline-text-2" id="text-1">
+
+<ul>
+<li>
+holds :sit :prop = Proposition PROP is true in situation SIT
+</li>
+<li>
+justifies :action :hyp = ACTION is justified by hypothesis HYP
+</li>
+<li>
+believes :actor :prop = ACTOR believes proposition PROP is true
+</li>
+<li>
+observes :actor :prop = ACTOR observes proposition PROP to be true
+</li>
+<li>
+expects :actor :prop = ACTOR expects proposition PROP to be true soon
+</li>
+<li>
+observes-class :actor :class = ACTOR observes an entity of class CLASS
+</li>
+<li>
+desires :actor :prop = ACTOR desires that proposition PROP be true
+</li>
+<li>
+intends :actor :prop = ACTOR intends to take ACTION
+</li>
+<li>
+does :actor :prop = ACTOR takes ACTION in the simulator
+</li>
+<li>
+infers :actor :sit = ACTOR infers that proposition PROP is true
+</li>
+<li>
+plans :actor :plan = ACTOR has the plan PLAN
+</li>
+<li>
+engages :actor :critic = ACTOR recently engaged the criticism CRIT
+</li>
+</ul>
+
+
+
+<p>
+These frames are represented in EM-ONE as sets of <b>ground binary predicates</b>
+that capture the set of slot relations asserted by each frame. 
+In addition to binary predicates for the frame slots shown in Table 2‑1, 
+the EM-ONE frame language includes supplementary predicates 
+for representing the compositional structure of situations and events, 
+the temporal orderings that hold between them, and their 
+causal interdependencies. These predicates are listed in Table 2-2.
+</p>
+</div>
+
+<div id="outline-container-1_1" class="outline-3">
+<h3 id="sec-1_1"><span class="section-number-3">1.1</span> example parsing </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+
+
+
+<pre class="src src-clojure">(defnarrative green-grasps-stick-from-pink
+  (desires green (is-holding green stick) [1])
+  (sequential
+    (observes green (is-holding pink stick))
+    (does green (grasps green stick) [2])
+    (believes pink (desires green (is-holding green stick)) [3])
+    (does pink (releases pink stick) [4]))
+  (causes [1] [2])
+  (causes [2] [3])
+  (causes [3] [4]))
+
+(subsit TOPSIT_19457 SIT_19459)
+(truth SIT_19459 true)
+(isa SIT_19459 situation)
+(<span style="color: #7a378b;">type</span> SIT_19459 desires)
+(actor SIT_19459 green)
+(truth SIT_19460 true)
+(isa SIT_19460 situation)
+(<span style="color: #7a378b;">type</span> SIT_19460 is-holding)
+(subsit SIT_19459 SIT_19460)
+(subject SIT_19460 green)
+(object SIT_19460 stick)
+(prop SIT_19459 SIT_19460)
+(isa SIT_19461 situation)
+(subsit TOPSIT_19457 SIT_19461)
+(truth SIT_19462 true)
+(isa SIT_19462 situation)
+(<span style="color: #7a378b;">type</span> SIT_19462 observes)
+(subsit SIT_19461 SIT_19462)
+(actor SIT_19462 green)
+(truth SIT_19463 true)
+(isa SIT_19463 situation)
+(<span style="color: #7a378b;">type</span> SIT_19463 is-holding)
+(subsit SIT_19462 SIT_19463)
+(subject SIT_19463 pink)
+(object SIT_19463 stick)
+(prop SIT_19462 SIT_19463)
+(truth SIT_19464 true)
+(isa SIT_19464 situation)
+(<span style="color: #7a378b;">type</span> SIT_19464 does)
+(subsit SIT_19461 SIT_19464)
+(actor SIT_19464 green)
+(truth SIT_19465 true)
+(isa SIT_19465 situation)
+(<span style="color: #7a378b;">type</span> SIT_19465 grasps)
+(subsit SIT_19464 SIT_19465)
+(actor SIT_19465 green)
+(object SIT_19465 stick)
+(prop SIT_19464 SIT_19465)
+(follows SIT_19462 SIT_19464)
+(truth SIT_19466 true)
+(isa SIT_19466 situation)
+(<span style="color: #7a378b;">type</span> SIT_19466 believes)
+(subsit SIT_19461 SIT_19466)
+(actor SIT_19466 pink)
+(truth SIT_19467 true)
+(isa SIT_19467 situation)
+(<span style="color: #7a378b;">type</span> SIT_19467 desires)
+(subsit SIT_19466 SIT_19467)
+(actor SIT_19467 green)
+(truth SIT_19468 true)
+(isa SIT_19468 situation)
+(<span style="color: #7a378b;">type</span> SIT_19468 is-holding)
+(subsit SIT_19467 SIT_19468)
+(subject SIT_19468 green)
+(object SIT_19468 stick)
+(prop SIT_19467 SIT_19468)
+(prop SIT_19466 SIT_19467)
+(follows SIT_19464 SIT_19466)
+(truth SIT_19469 true)
+(isa SIT_19469 situation)
+(<span style="color: #7a378b;">type</span> SIT_19469 does)
+(subsit SIT_19461 SIT_19469)
+(actor SIT_19469 pink)
+(truth SIT_19470 true)
+(isa SIT_19470 situation)
+(<span style="color: #7a378b;">type</span> SIT_19470 releases)
+(subsit SIT_19469 SIT_19470)
+(actor SIT_19470 pink)
+(object SIT_19470 stick)
+(prop SIT_19469 SIT_19470)
+(follows SIT_19466 SIT_19469)
+(causes SIT_19462 SIT_19464)
+(causes SIT_19464 SIT_19466)
+(causes SIT_19466 SIT_19469)
+</pre>
+
+
+
+<p>
+After all the statements have been parsed, scaffolding frames are added
+to tie them together into a single narrative. Each statement’s 
+frame is embedded within a situation frame using a subsit relation. 
+Each these situation frames are themselves embedded within the larger
+narrative frame also by using subsit relations. If frames are within 
+a statement whose head is termed sequential, then between each adjacent 
+pair of frames is asserted the follows temporal relationship.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1_2" class="outline-3">
+<h3 id="sec-1_2"><span class="section-number-3">1.2</span> binary predicates </h3>
+<div class="outline-text-3" id="text-1_2">
+
+<p>(subsit SIT SUBSIT) The situation SUBSIT holds during the situation SIT
+(type X TYPE) The entity X is of type TYPE (e.g. grasps or believes)
+(isa X CLASS) The entity X is of class CLASS (e.g. object or situation)
+(truth SIT TRUTH) The situation SIT has TRUTH value (can be true or false)
+(follows S1 S2) The situation S1 is temporally followed by situation S2
+(causes S1 S2) The situation S1 causes the situation S2
+(implies S1 S2) The situation S1 implies the situation S2
+(jointly S1 S2) The situation S1 is true jointly with the situation S2
+(dependency S1 S2) The situation S2 has a dependency on the situation S1
+(requirement S1 S2) The situation S2 requires situation S1
+</p>
+
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Seth Burleigh
+</p>
+<p class="date"> Date: </p>
+<p class="creator">HTML generated by org-mode 7.4 in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
