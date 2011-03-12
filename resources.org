@@ -1,0 +1,128 @@
+#+TITLE: Resources
+#+Author: Seth Burleigh
+#+Date: 
+#+Options: toc:nil
+#+LaTeX_HEADER: \usepackage{amsmath}
+#+LaTeX_HEADER: \usepackage{subfigure}
+#+LaTeX_CLASS: smarticle
+#+LaTeX_HEADER: \usepackage{courier}
+#+LaTeX_HEADER: \usepackage{libertine}
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LaTeX_HEADER: \sectionfont{\normalfont\scshape}
+#+LaTeX_HEADER: \subsectionfont{\normalfont\itshape}
+ 
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+* Introduction
+Whenever starting a project, it is necessary to research what others have done.
+While 'genetic algorithms' and 'neural networks' are commonly known among practically everyone to be associated with ai,
+it is not commonly known that in the field of artificial general intelligence, focus has gone toward integrated cognitive 
+architectures. This is also what psychology does - create computational cognitive models and then simulate.
+
+Anyways, once the ideas have been found it is necessary to combine all relevant ones to bear on our cool problem!
+Notice, that in dodo.org, I mention the need for a domain other than the big bad world to test our  agi (artificial general intelligence) in. This is quite
+similar in spirit to the microdomains recommended by the Copycat/Tabletop architecture. Of course, other architectures
+use test problems, but the the test problem is not a 'world' domain as we defined it - they dont allow exercising areas of
+all aspects of cognition. Not that that's a bad thing - but in the end, one would like to exercise all aspects of cognition
+but in a smaller world (but larger than the microdomains above, which actually test structural representation buildup). 
+
+** Google Keywords
+New terms you might want to google to get better results than 'genetic algoritihms' or neural nets! 
+1. Deep belief networks
+2. Cognitive Architecture
+3. Artificial general intelligence (agi)
+** Getting into the Game
+Resources below have links to appropriate internet places. I particularly recommend accessing first (yes, in this order!)
+1. Emotion Machine (Books)
+2. Neurocomputing (Overview Paper)
+
+Also, pay attention to the organization section - this section contains a lot of papers that are referenced in this document - it
+is basically a good place to discover new ideas. 
+ 
+
+* Books
+** /Emotion Machine/ and /Society of Mind/ 
+Very nontechnical - but it gives you the right mentality for general intelligence. Contains numerous examples that
+relate to real situations, and decomposing them into simpler elements. Read it first!
+** /Principles of Synthetic Intelligence/ (MicroPSI/PSI architecture)
+Book on MicroPSI/PSI Architecture
+** /Fluid Concepts and Creative Analogies/
+Book describing experiments with microdomains and creating structural representations from them. See Copycat in architecture below.
+* Overview Papers
+These papers give general overviews of current works.
+** NeuroComputing - World Survey of Artificial brains, part II (2010)
+An overview of three general types of neurcomputing architectures and some more in detail description of representative samples.
+http://web.eecs.utk.edu/~itamar/Papers/NeuroComputing2010.pdf
+
+* Architectures
+** [[www.isd.mel.nist.gov/documents/albus/4DRCS_ver2.pdf][4DRCS]]
+I havent read this, but abstract sounds interesting.
+
+** [[http://www.icsi.berkeley.edu/~shastri/shruti/][Shruti]]
+"We are capable of drawing a variety of inferences effortlessly, spontaneously, and with remarkable efficiency --- 
+as though these inferences are a reflex response of our cognitive apparatus. This remarkable human ability poses a
+ challenge for cognitive science and computational neuroscience: How can a system of slow neuron-like elements
+ represent a large body of systematic knowledge and perform a wide range of inferences with such speed?
+
+SHRUTI attempts to address this challenge by demonstrating how a connectionist network can encode a large body of semantic 
+and episodic facts, systematic rule-like mappings, knowledge about entities, and types, and yet perform a wide range of
+ reflexive inferences within a few hundred milliseconds."
+
+The related paper is called
+/From simple associations to systematic reasoning:a connectionist en-coding of rules, variables, and dynamic bindings using temporal synchrony/
+
+** Copycat/Tabletop
+Not an architecture per se, but each problem is  a microdomain in which a structural representation is stochastically
+built of the problem (or something like that!). The idea is that, while other architectures encode representations which
+the human programmer gives to it, a real ai architecture should be able to build its own representation of the situation.
+A book on these various microdomains is /Fluid Concepts and Creative Analogies/
+
+http://www.cogsci.indiana.edu/microdomains.html
+** [[www.aaai.org/ocs/index.php/FSS/FSS09/paper/download/951/1268][DESTIN]]
+Created by [[http://mil.engr.utk.edu/nmil/member/2][AREL]]
+it is a deep belief network for visual perception (right now). Current direction is to create quality open source
+software - this is being pursued with opencog people (for example, see http://blog.opencog.org/2011/02/21/destin-vision-development/)
+** SAL Integrated Architecture
+Integrates [[http://grey.colorado.edu/emergent/index.php/Leabra][Leabra]] and [[http://act-r.psy.cmu.edu/][Act-R]] .
+Leibr is a low level neuron implementation and act-r is more abstract. 
+[[http://www.scribd.com/doc/31121092/DARPA-CognitiveResearch-II][DARPA contract summary - phase 1]]
+** PSI/MicroPSI
+Book on it:
+Principles of Synthetic Intelligence
+
+** AMBR/DUAL (partialy based on societ of mind)
+http://alexpetrov.com/proj/
+
+** Opencog
+** [[http://mmp.mit.edu/][MMP]] initiative (core part is an architecture based on Emotion Machine)
+*** About
+[[http://web.mit.edu/newsoffice/2009/ai-overview-1207.html][MMP Article]]
+*** [[http://web.media.mit.edu/~push/push-thesis.html][EM-ONE Thesis]]
+*** Funk2
+[[http://www.funk2.org/][Funk2]] is an open source programming language that has been created to make the Emotion Machine
+architecture. It is a core part of the MMP. This work started by being based off of Push Singh's [[http://web.media.mit.edu/~push/push-thesis.html][EM-ONE Thesis]] in which
+he implements a limited form of the Emotion Machine architecture in common lisp. A thesis
+proposal for Funk2 is here [[http://docs.google.com/viewer?a=v&q=cache:IJPOxQF1dvAJ:neuromin.de/rct/morgan2010-a_computational_theory_of_the_communication_of_problem_solving_knowledge_between_parents_and_children.pdf+push+singh+em-one+code&hl=en&gl=us&pid=bl&srcid=ADGEESgR7BLxpluU3kNnMpeGPdcw9VRiq8_RzntV0H4i1QgtUB7D7vq-Mw721Gd1zmWZZeKLOFCJdqK2nbhhQ80oS1D4zDf_-4R78s8Uaf_i5gah33OO9Ed-qqbzHyuuMPLQ4orUSLrE&sig=AHIEtbSbAjz9K2KhyXLR6FdRKqxwrX1GNQ][Funk2 Thesis Proposal]].
+
+[[https://github.com/bunuelo][Github Repository]]
+
+* Organizations
+** AAAI - Association for the Advancement of Artificial Intelligence
+http://www.aaai.org/home.html
+On this webesite, many papers can be found on AI, including many about architectures previously mentioned. 
+"Founded in 1979, the Association for the Advancement of Artificial Intelligence (AAAI) (formerly the American Association 
+for Artificial Intelligence) is a nonprofit scientific society devoted to advancing the 
+scientific understanding of the mechanisms underlying thought and intelligent behavior and their 
+embodiment in machines. AAAI also aims to increase public understanding of artificial intelligence, 
+improve the teaching and training of AI practitioners, and provide guidance for research planners and 
+funders concerning the importance and potential of current AI developments and future directions."
+
+* Other Websites
+http://neuromin.de/an/neuralmom.html
+
+http://web.media.mit.edu/~minsky/papers/Internal%20Grounding.html
+
+ 
+

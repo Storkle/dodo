@@ -37,6 +37,8 @@ support all of the architecture that we need to demonstrate? Well, lets see...
 1. Can it apply problem solving and imagination in forex ... yep! trading strategies, price action, order management, ....
 2. Can it apply language ... yep! language is a convenient to represent ideas between 2+ entities and also useful to think in terms of
 3. Can it demonstrate reflective thinking, consciousness, ... yep! sure, its a small world with it /only/ knowing about price streams, but this form of thinking is needed for #1 ....
+4. Can it demonstrate vision - sure, price action and pattern recognition in price streams is necessary for success!
+5. Spatial relationship, temporal realtionships - of course! vision, how quick market moves...
 
 As we can see, using one sensory input wouldn't prevent us from fleshing out and demonstrating a whole architecture! What it /does/ do is take out the complexity
 that complex sensory inputs would present to agi. This is highly desirable, because With complexity comes a tunnel like approach: \\
@@ -81,42 +83,8 @@ Some correlaries:
 For reasons described in the Introduction, *forex price streams* have been chosen as /The World/.
  
 * Research
-Such a large task, even on a small world such as forex, will require many smaller goals. Accordingly, each goal will receive a brief description here, but
-will be developed in a separate org file. 
-** FX1
-FX1 will clone the experiment described in the [[http://web.media.mit.edu/~push/push-thesis.html][EM-ONE Thesis]], except in clojure. The architecture is based on the /Emotion Machine/, and it is the best
-high level architecture that I have read about. I *highly* recommend reading /Emotion Machine/, anyone can understand it. Anyways, FX1 will act as the bare scaffolding
-on which we will further develop/experiment with concepts. 
-
-Questions to think on:
-
-/A main assumption is that we have to use symbols or words as representations. But maybe we should be thinking of why symbols are useful? In the humand mind/
-/words have various meanings in various contexts. They allow us to express ourselves abstractly so we dont have to go into unecessary/
-/details which might be so common that it is uneccessary to repeat them, or are otherwise irrelevant. Somewhere below the symbolic language, is a hierarchy/
-/which encompasses the raw sensory input, that abstracts the world in a certain way (verbs,objects,associations  per context). Is there a better or alternative way/
-/to do this than 'labels'?/
-
-* Resources
-** /Emotion Machine/ and /Society of Mind/ 
-Books
-** [[http://opencog.org/][OpenCog]] 
-** [[http://mmp.mit.edu/][MMP]] initiative (core part is an architecture based on Emotion Machine)
-*** About
-[[http://web.mit.edu/newsoffice/2009/ai-overview-1207.html][MMP Article]]
-*** [[http://web.media.mit.edu/~push/push-thesis.html][EM-ONE Thesis]]
-*** Funk2
-[[http://www.funk2.org/][Funk2]] is an open source programming language that has been created to make the Emotion Machine
-architecture. It is a core part of the MMP. This work started by being based off of Push Singh's [[http://web.media.mit.edu/~push/push-thesis.html][EM-ONE Thesis]] in which
-he implements a limited form of the Emotion Machine architecture in common lisp. A thesis
-proposal for Funk2 is here [[http://docs.google.com/viewer?a=v&q=cache:IJPOxQF1dvAJ:neuromin.de/rct/morgan2010-a_computational_theory_of_the_communication_of_problem_solving_knowledge_between_parents_and_children.pdf+push+singh+em-one+code&hl=en&gl=us&pid=bl&srcid=ADGEESgR7BLxpluU3kNnMpeGPdcw9VRiq8_RzntV0H4i1QgtUB7D7vq-Mw721Gd1zmWZZeKLOFCJdqK2nbhhQ80oS1D4zDf_-4R78s8Uaf_i5gah33OO9Ed-qqbzHyuuMPLQ4orUSLrE&sig=AHIEtbSbAjz9K2KhyXLR6FdRKqxwrX1GNQ][Funk2 Thesis Proposal]].
-
-[[https://github.com/bunuelo][Github Repository]]
+Such a large task, even on a small world such as forex, will require many smaller subgoals. 
+Accordingly, each subgoal will receive a brief description here, but will be developed in a separate org file. 
 
 
 
-** Other Websites
-http://neuromin.de/an/neuralmom.html
-
-http://web.media.mit.edu/~minsky/papers/Internal%20Grounding.html
-
- 
