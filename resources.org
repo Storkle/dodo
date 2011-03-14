@@ -37,6 +37,7 @@ New terms you might want to google to get better results than 'genetic algoritih
 Resources below have links to appropriate internet places. I particularly recommend accessing first (yes, in this order!)
 1. Emotion Machine (Books)
 2. Neurocomputing (Overview Paper)
+3. [[http://science.slc.edu/~jmarshall/metacat/][Metacat]] and Fluid Concepts and Creative Analogies book
 
 Also, pay attention to the organization section - this section contains a lot of papers that are referenced in this document - it
 is basically a good place to discover new ideas. 
@@ -79,6 +80,7 @@ built of the problem (or something like that!). The idea is that, while other ar
 the human programmer gives to it, a real ai architecture should be able to build its own representation of the situation.
 A book on these various microdomains is /Fluid Concepts and Creative Analogies/
 
+[[http://science.slc.edu/~jmarshall/metacat/][Metacat]]
 http://www.cogsci.indiana.edu/microdomains.html
 ** [[www.aaai.org/ocs/index.php/FSS/FSS09/paper/download/951/1268][DESTIN]]
 Created by [[http://mil.engr.utk.edu/nmil/member/2][AREL]]
@@ -120,6 +122,12 @@ improve the teaching and training of AI practitioners, and provide guidance for 
 funders concerning the importance and potential of current AI developments and future directions."
 
 * Other Websites
+http://www.adaptiveai.com/technology.html
+
+http://ir.lib.sfu.ca/bitstream/1892/10815/1/etd4481.pdf
+
+http://www.acceleratingfuture.com/people-blog/2008/cognitive-architectures-where-do-we-go-from-here/
+
 http://neuromin.de/an/neuralmom.html
 
 http://web.media.mit.edu/~minsky/papers/Internal%20Grounding.html
