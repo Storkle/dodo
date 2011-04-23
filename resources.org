@@ -15,6 +15,159 @@
 \setcounter{tocdepth}{3}
 \tableofcontents
 \newpage
+
+Giulio Tononi
+
+
+[[http://videolectures.net/icml07_tenenbaum_bmhi/][tenebaum]]!!!!!!!
+[[http://www.acceleratingfuture.com/michael/blog/2006/11/bitphase-moves-forward/][bitphase]]
+
+Solomonoff induction
+
+[[http://www.acceleratingfuture.com/michael/blog/category/ai/][accelerating future stuff]]
+
+http://singularityhub.com/2011/02/03/will-vicarious-systems-silicon-valley-pedigree-help-it-build-agi/#more-26453
+
+/Probability Theory: The Logic of Science/
+
+Kolmogorov complexity
+[[http://www.idsia.ch/~juergen/kolmogorov.html][generalize kolmogorov]]
+
+starglider min-faq
+http://bbs.stardestroyer.net/viewtopic.php?f=5&t=136633
+
+* SL4 stuff
+My biggest criticism of AI designs generally is that almost none of them really offer a 
+theoretically solid reason why the design can be expected to produce AI in the first place. 
+Engineering design based on things that "sound good" does not fly (no pun intended) in any 
+other domain (except perhaps social engineering) and it has never produced good results 
+anywhere it has been tried as a general rule. Justification and validation is a very necessary 
+prerequisite that cannot be glossed over because it is difficult or inconvenient. 
+
+> The problem is that AGI theories are very 
+> hard to validate; to the untrained (or even moderately trained) 
+> eye one looks as good as another. 
+This is to be expected, since most of the people interested in validating an AGI theory are 
+interested in exploiting it rather than understanding it. And of these people, the smart ones 
+are rightly skeptical. Nothing beats a killer demo. 
+
+One can burn a lot of resources on iterative verification by implementation. It will get the job 
+done, but it ain't cheap. On the other hand, there are often subtle problems that you 
+discover in implementation that would have taken a lot longer to discover doing high-level 
+design. I wish I hadn't spent so much time on iterative implementation, but I'm not sure that 
+I would have been obviously better off doing it another way. 
+
+http://www.sl4.org/archive/0502/10741.html
+
+
+I may be misunderstanding him, but I take him to mean not that that 
+particular theory (collective volition) is the one true one, but 
+that to be more useful than dangerous an AGI project must: 
+1) Be based on some solid theory of Friendliness, 
+2) Have a grave respect for the potential dangers and a strong 
+safety-first attitude. 
+
+http://www.sl4.org/archive/0502/10742.html
+
+---------------
+http://www.sl4.org/archive/0502/10743.html
+All the major, credible AGI projects take care to examine the field 
+of AI, looking for incremental successes to reuse and common pitfalls 
+to avoid. I still regularly see people starting personal projects and 
+declaring that 'since all past work failed, it must be irrelevant, so 
+I don't need to pay much/any attention to it'. 
+
+Most relevant recent theoretical progress has been in decision 
+theory and cognitive science, not in AI as such; AGI projects don't 
+often reuse technology from earlier, failed AGI projects (or from 
+other people's AGI projects in general). 
+
+> And this does not apply to the folks at SIAI because...? 
+It does apply to the SIAI. Our only defence is that we acknowledge 
+the depth of the self-delusion problem (and take what steps we can 
+to detect it). In fact this is another reason I want to do (limited) 
+prototyping now; if we have serious blind spots, I want to know about 
+them ASAP. This is also a major reason for Eliezer's push for formally 
+provable algorithms and techniques for FAI; while deluding yourself 
+into thinking you have an AGI design when you don't is merely a waste 
+of time and resources, deluding yourself into thinking you have an 
+FAI design when you really only have a seed AI design is fatal. 
+
+http://www.sl4.org/archive/0502/10749.html
+more explanation of above.. on 'volatility' principle 
+* More Random
+
+http://www.physorg.com/news2933.html
+
+Minsky notes that causality is often very tangled in agent interactions. While true this should probably be 
+'considered harmful' judging by the number of AI researchers who think that establishing tangled networks of 
+arbitrary agents ('bubbling stews') driven by a few goal seeking dynamics is sufficient for cognition. 
+
+
+
+[[http://www.sl4.org/archive/0502/10740.html][AGI prototype]]
+
+[[http://yudkowsky.net/rational/bayes][Bayes theorem]]
+[[http://yudkowsky.net/rational/cognitive-biases][Heuristics and biases section]]
+[[http://bayes.wustl.edu/etj/science.pdf.html][Bayes in science and engineering]]
+
+I need genetic algorithm introduction!
+[[http://yudkowsky.net/rational][yudowsky]]
+
+[[http://lesswrong.com/][Rationality]]
+
+* FAILURES
+  
+http://www.acceleratingfuture.com/michael/blog/2006/11/michael-wilson-on-ways-of-looking-at-ai/
+
+starglider (not faiure!): good summaries: 
+
+http://www.acceleratingfuture.com/wiki/Starglider/The_Failure_Of_GOFAI
+
+* Random
+[[http://people.cs.kuleuven.be/~joaquin.vanschoren/zsp/fluidconcepts/node27.html][WRITING CODELETS]]
+
+Bayesian reasoning.
+
+[[http://www.acceleratingfuture.com/wiki/Starglider/Notes_On_Induction][more fargo critique]]
+
+more FARGO related stuff 
+SeekWell (cognition and analogy in musical realm) and SeqSee (cognition and analogy in number sequence domain)
+http://singinst.org/summit/speakers/hofstadter/
+
+
+comments on connectionist stuff
+http://www.princeton.edu/~gdetre/notes/
+
+comments on metacat
+http://www.princeton.edu/~gdetre/notes/essay%20-%20curious%20machines,%20final%20paper%2010%20re-edit.htm
+
+http://lesswrong.com/lw/ul/my_bayesian_enlightenment/
+
+another link that describes more psych functions
+http://www.acceleratingfuture.com/wiki/Cognitive_Science
+
+Extracting Refined Rules from Knowledge-Based Neural Networks
+http://johncarlosbaez.wordpress.com/2011/03/07/this-weeks-finds-week-311/
+
+http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind
+
+* Seekwell/Musicat??
+http://seekwell.wordpress.com/
+[[http://www.cs.indiana.edu/~epnichol/seekwell/][Description]]
+[[http://singinst.org/summit/speakers/hofstadter/][REF]]
+
+[[http://www.cs.indiana.edu/~epnichol/pages/resume.html][Authors website]]
+[[http://www.capyblanca.com/search/label/fluid%20concepts][Link to general fluid concepts library?? linked from seekwell]]
+
+* Seqsee
+[[http://webcache.googleusercontent.com/search?q=cache:v453ggLDAekJ:cgi.cs.indiana.edu/~amahabal/pmwiki/pmwiki.php%3Fn%3DSeqsee.Seqsee+SeqSee&cd=2&hl=en&ct=clnk&gl=us&client=ubuntu&source=www.google.com][seqsee]]
+
+[[http://amahabal.wordpress.com/][2006-wordpress]]
+
+[[https://github.com/amahabal/Seqsee][Github code]]
+[[sites.google.com/a/amahabal.com/main/files/Seqsee--doublesided.pdf][paper on it]]
+
 * Introduction
 Whenever starting a project, it is necessary to research what others have done.
 While 'genetic algorithms' and 'neural networks' are commonly known among practically everyone to be associated with ai,
@@ -42,7 +195,6 @@ Resources below have links to appropriate internet places. I particularly recomm
 Also, pay attention to the organization section - this section contains a lot of papers that are referenced in this document - it
 is basically a good place to discover new ideas. 
  
-
 * Books
 ** /Emotion Machine/ and /Society of Mind/ 
 Very nontechnical - but it gives you the right mentality for general intelligence. Contains numerous examples that
