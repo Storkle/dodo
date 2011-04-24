@@ -67,6 +67,8 @@ Judgment under uncertainty : heuristics and biases
 Heuristics and Biases: The Psychology of Intuitive Judgment 
 * Evolutionary Psych
 The Origins of Virtue
+* Links
+http://www.markan.net/agilinks.html
 * ++++Random Links
 These are random links that i havent processed.
 [[http://www.agiri.org/wiki/Instead_of_an_AGI_Textbook][General course]]
