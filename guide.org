@@ -17,6 +17,8 @@
 \newpage
 
 The resources i have found so far!
+* Vision 
+Vision: A Computational Investigation into the Human Representation and Processing of Visual Information
 
 * Classical AI
 *** STARTED Artificial Intelligence: A Modern Approach (2nd edition)
