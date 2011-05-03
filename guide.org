@@ -17,6 +17,13 @@
 \newpage
 
 The resources i have found so far!
+
+Artificial Minds, Stan Franklin
+Reinforcement learning
+causal chaining
+
+you need to look at the ai blog website for example of BAYESIAN STUFF approach in agi
+* Information Theory!
 * Vision 
 Vision: A Computational Investigation into the Human Representation and Processing of Visual Information
 
@@ -45,7 +52,7 @@ by Lawrence Barsalou's
 ** The Symbolic Species - Terrence Deacon
 redundant?
 * Probability/Bayesian
-** STARTED Data Analysis: A Bayesian Tutorial
+** DONE Data Analysis: A Bayesian Tutorial
 ** Probability Theory: The Logic of Science 
 ** PLN (probabilistic logic network) book from OpenCog
 * Memory/Case based reasoning
